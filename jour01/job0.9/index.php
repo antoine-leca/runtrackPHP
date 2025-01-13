@@ -1,2 +1,7 @@
 <?php 
-echo "Hello la plateforme!";
+
+$hlp = "Hello la plateforme";
+
+echo $hlp;
+
+?>
