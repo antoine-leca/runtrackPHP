@@ -7,11 +7,11 @@
 
     $val = 6;
     echo $val;
-    $val += 4;
+    $val = $val + 4;
     echo $val ."<br>";
 
     $myBool = true;
     echo "la variable myBool est " .$myBool;
-    $myBool = "la variable myBool est maintenant " .false;
+    $myBool = "la variable myBool est maintenant " false;
     echo $myBool;
 ?>
