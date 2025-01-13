@@ -11,6 +11,6 @@
 
     $myBool = true;
     echo "la variable myBool est " .$myBool;
-    $myBool = "la variable myBool est maintenant " .$false;
+    $myBool = "la variable myBool est maintenant " .false;
     echo $myBool;
 ?>
