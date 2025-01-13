@@ -10,7 +10,7 @@
     $val += 4;
 
     $myBool = true;
-    echo $myBool;
-    $myBool = false;
+    echo "la variable myBool est " .$myBool;
+    $myBool = "la variable myBool est maintenant " .$false;
     echo $myBool;
 ?>
