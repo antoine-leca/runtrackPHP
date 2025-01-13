@@ -9,7 +9,7 @@
     $bool2 = false;
     $array = array(1, 2, 3);
 
-    $maxcols = 3;
+    $maxcols = 9;
     $maxid = 9;
     $startid = 1;
 
