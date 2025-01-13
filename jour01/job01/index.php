@@ -8,7 +8,7 @@
     $val = 6;
     echo $val;
     $val += 4;
-    echo $val "<br>";
+    echo $val ."<br>";
 
     $myBool = true;
     echo "la variable myBool est " .$myBool;
