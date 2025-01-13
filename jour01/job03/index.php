@@ -2,7 +2,7 @@
     $str = "LaPlateforme";
     $numd = 1.2;
     $numh = 1.2e3;
-    $numo = 0186;
+    $numo = 0264;
     $numb = 0b1101;
     $float = 1.234;
     $bool = true;
