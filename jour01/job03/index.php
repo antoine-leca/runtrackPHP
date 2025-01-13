@@ -13,9 +13,8 @@
     $maxid = 9;
     $startid = 1;
 
-echo "<table id='table1'>\n";
-echo "<thead> <tr>Type</tr><tr>Nom</tr><tr>Valeur</tr> </thead>\n";
-for ($i = 1;$i<=ceil($maxid/$maxcols);$i++) {
+    echo "<table>\n";
+    for ($i = 1;$i<=ceil($maxid/$maxcols);$i++) {
 
     echo "<tr>\n";
     for ($j=1;$j<=$maxcols;$j++)
@@ -30,6 +29,20 @@ for ($i = 1;$i<=ceil($maxid/$maxcols);$i++) {
 
     echo "</tr>\n";
 }
-
 echo "</table>\n";
+
+$type = ["String", "Integer", "Float", "Boolean", "Array"];
+$cat = ["Double Quoted", "Decimal", "Hexadecimal", "Octal", "Binary"];
+$rows = $type. " ". $cat. " ". "val" ;
+
+$maxcols = 3;
+$maxrows = 10;
+$startrow = 0;
+
+echo "<table>\n";
+for ($i = 0;$i<$maxrows;$i++) {
+    echo "<th>$type\n";
+}
+
 ?>
+
