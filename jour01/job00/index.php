@@ -2,6 +2,4 @@
 
 $hlp = "Hello la plateforme";
 
-echo $hlp;
-
-?>
+echo ($hlp);
