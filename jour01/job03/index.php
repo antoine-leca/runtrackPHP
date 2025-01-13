@@ -14,6 +14,7 @@
     $startid = 1;
 
 echo "<table id='table1'>\n";
+echo "<thead> <tr>Type</tr><tr>Nom</tr><tr>Valeur</tr> </thead>"
 for ($i = 1;$i<=ceil($maxid/$maxcols);$i++) {
 
     echo "<tr>\n";
