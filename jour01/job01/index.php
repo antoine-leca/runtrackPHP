@@ -11,7 +11,7 @@
     echo $val ."<br>";
 
     $myBool = true;
-    echo "la variable myBool est :" .$myBool .<br>;
+    echo "la variable myBool est :" .$myBool ."<br>";
     $myBool = "la variable myBool est maintenant :". false;
     echo $myBool;
 ?>
