@@ -20,7 +20,8 @@
 ?>
 
 <body>
-    <table>
+    <table border="1" cellpadding="10" cellspacing="0">
+        
         <caption>Variables</caption>
         <thead>
             <th scope="col">Type</th>
