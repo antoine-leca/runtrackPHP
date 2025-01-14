@@ -10,7 +10,7 @@
     $typeStr = "String";
     $typeInt = "Integer";
     $typeBool = "Boolean";
-    $cat = ["Decimal". "Hexadecimal". "Octal". "Binaire"];
+    $cat = ["Decimal", "Hexadecimal", "Octal", "Binaire"];
     $str = "LaPlateforme";
     $numE = 756;
     $numH = 0x352;
