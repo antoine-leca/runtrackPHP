@@ -1,48 +1,65 @@
-<?php 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<?php
+    $typeStr = "String";
+    $typeInt = "Integer";
+    $typeBool = "Boolean";
+    $cat = ["Decimal". "Hexadecimal". "Octal". "Binaire"];
     $str = "LaPlateforme";
-    $numd = 1.2;
-    $numh = 1.2e3;
-    $numo = 0264;
-    $numb = 0b1101;
-    $float = 1.234;
-    $bool = true;
-    $bool2 = false;
-    $array = array(1, 2, 3);
-
-    $maxcols = 9;
-    $maxid = 9;
-    $startid = 1;
-
-    echo "<table>\n";
-    for ($i = 1;$i<=ceil($maxid/$maxcols);$i++) {
-
-    echo "<tr>\n";
-    for ($j=1;$j<=$maxcols;$j++)
-        if ($startid <= $maxid)
-            echo "  <td class='mark'>ID".$startid++."</td>\n";
-        else 
-            echo "  <td> </td>\n";
-
-    echo "</tr>\n<tr>\n";
-    for ($j=1;$j<=$maxcols;$j++)
-        echo "<td>Content</td>\n";
-
-    echo "</tr>\n";
-}
-echo "</table>\n";
-
-$type = ["String", "Integer", "Float", "Boolean", "Array"];
-$cat = ["Double Quoted", "Decimal", "Hexadecimal", "Octal", "Binary"];
-$rows = $type. " ". $cat. " ". "val" ;
-
-$maxcols = 3;
-$maxrows = 10;
-$startrow = 0;
-
-echo "<table>\n";
-for ($i = 0;$i<$maxrows;$i++) {
-    echo "<th>$type\n";
-}
-
+    $numE = 756;
+    $numH = 0x352;
+    $numO = 0264;
+    $numB = 0b110110;
+    $myBool = true;
 ?>
+
+<body>
+    <table>
+        <caption>Variables</caption>
+        <thead>
+            <th scope="col">Type</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Valeur</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row"><?php $typeStr ?></td>
+                <td><?php $typeStr ?></td>
+                <td><?php $str ?></td>
+            </tr>
+            <tr>
+                <td scope="row"><?php $typeInt ?></td>
+                <td><?php $cat[0] ?></td>
+                <td><?php $numE ?></td>
+            </tr>
+            <tr>
+                <td scope="row"><?php $typeInt ?></td>
+                <td><?php $cat[1] ?></td>
+                <td><?php $numH ?></td>
+            </tr>
+            <tr>
+                <td scope="row"><?php $typeInt ?></td>
+                <td><?php $cat[2] ?></td>
+                <td><?php $numO ?></td>
+            </tr>
+            <tr>
+                <td scope="row"><?php $typeInt ?></td>
+                <td><?php $cat[3] ?></td>
+                <td><?php $numB ?></td>
+            </tr>
+            <tr>
+                <td scope="row"><?php $typeBool ?></td>
+                <td><?php $typeBool ?></td>
+                <td><?php $myBool ?></td>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+</body>
+</html>
 
