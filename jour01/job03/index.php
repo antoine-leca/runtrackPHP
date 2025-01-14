@@ -29,34 +29,34 @@
         </thead>
         <tbody>
             <tr>
-                <td scope="row"><?php $typeStr ?></td>
-                <td><?php $typeStr ?></td>
+                <td scope="row"><?php echo $typeStr ?></td>
+                <td><?php echo $typeStr ?></td>
                 <td><?php $str ?></td>
             </tr>
             <tr>
-                <td scope="row"><?php $typeInt ?></td>
-                <td><?php $cat[0] ?></td>
-                <td><?php $numE ?></td>
+                <td scope="row"><?php echo $typeInt ?></td>
+                <td><?php echo $cat[0] ?></td>
+                <td><?php echo $numE ?></td>
             </tr>
             <tr>
-                <td scope="row"><?php $typeInt ?></td>
-                <td><?php $cat[1] ?></td>
-                <td><?php $numH ?></td>
+                <td scope="row"><?php echo $typeInt ?></td>
+                <td><?php echo $cat[1] ?></td>
+                <td><?php echo $numH ?></td>
             </tr>
             <tr>
-                <td scope="row"><?php $typeInt ?></td>
-                <td><?php $cat[2] ?></td>
-                <td><?php $numO ?></td>
+                <td scope="row"><?php echo $typeInt ?></td>
+                <td><?php echo $cat[2] ?></td>
+                <td><?php echo $numO ?></td>
             </tr>
             <tr>
-                <td scope="row"><?php $typeInt ?></td>
-                <td><?php $cat[3] ?></td>
-                <td><?php $numB ?></td>
+                <td scope="row"><?php echo $typeInt ?></td>
+                <td><?php echo $cat[3] ?></td>
+                <td><?php echo $numB ?></td>
             </tr>
             <tr>
-                <td scope="row"><?php $typeBool ?></td>
-                <td><?php $typeBool ?></td>
-                <td><?php $myBool ?></td>
+                <td scope="row"><?php echo $typeBool ?></td>
+                <td><?php echo $typeBool ?></td>
+                <td><?php echo $myBool ?></td>
         </tbody>
         <tfoot></tfoot>
     </table>
