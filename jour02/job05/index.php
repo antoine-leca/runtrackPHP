@@ -1,11 +1,14 @@
 <?php
     $val = 0;
-    while ($val <= 1000):
-        if ($val % 2 === 0) {
-            echo $val;
-        } else {
-            echo "<br>";
+    for($i=1;$i<=1000;$i++) {      
+        $b=0;
+        for($j=1;$j<=$i;$j++){
+            if($i%$j==0){
+                $b=$b+1;
+            }
         }
-        $val++;
-    endwhile;
+        if($b==2){
+            echo ' '.$i;
+        }
+    }
 ?>
