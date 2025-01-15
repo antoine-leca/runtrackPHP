@@ -13,12 +13,13 @@
             if ($str[$val] === $voyelle) {
                 $isvoyelle = true;
                 $keyV++;
-                echo $keyV;
             }
             else {
                 $keyC++;
-                echo $keyC;
             }
+            
+            echo $keyV . "<br>";
+            echo $keyC;
         }
     }
 ?>
