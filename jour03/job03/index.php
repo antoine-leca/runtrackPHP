@@ -2,7 +2,7 @@
     $str = "I'm sorry Dave I'm afraid I can't do that";
     $voyelles = ["a", "e", "i", "o", "u", "y", "A", "E", "I", "O", "U", "Y"];
     $str_len = 0;
-    foreach ($str as $i) {
+    while (isset($str[$str_len])) {
         $str_len++;
     }
     for ($val = 0 ; $val < $str_len ; $val++) {
