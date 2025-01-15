@@ -1,5 +1,6 @@
 <?php
     $str = "On n'est pas le meilleur quand on le croit mais quand on le sait.";
+    $voyelles = ["a", "e", "i", "o", "u", "y", "A", "E", "I", "O", "U", "Y"];
     $str_len = 0;
     $keyC = 0;
     $keyV = 0;
