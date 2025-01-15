@@ -11,7 +11,7 @@
     $val = [200, 204, 173, 98, 171, 404, 459];
 ?>
 
-<table>
+<table border="1" cellpadding="10" cellspacing="0">
     <caption>Pair ou impair ?</caption>
     <thead>
         <tr>
