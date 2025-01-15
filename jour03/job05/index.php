@@ -15,6 +15,7 @@
                 $keyV++;
             }
             else {
+                $isvoyelle = false;
                 $keyC++;
             }
             
