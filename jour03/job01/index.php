@@ -15,13 +15,13 @@
     <caption>Pair ou impair ?</caption>
     <thead>
         <tr>
-            <th><?php $val[0] ?></th>
-            <th><?php $val[1] ?></th>
-            <th><?php $val[2] ?></th>
-            <th><?php $val[3] ?></th>
-            <th><?php $val[4] ?></th>
-            <th><?php $val[5] ?></th>
-            <th><?php $val[6] ?></th>
+            <th><?php echo $val[0] ?></th>
+            <th><?php echo $val[1] ?></th>
+            <th><?php echo $val[2] ?></th>
+            <th><?php echo $val[3] ?></th>
+            <th><?php echo $val[4] ?></th>
+            <th><?php echo $val[5] ?></th>
+            <th><?php echo $val[6] ?></th>
         </tr>
     </thead>
     <tbody>
