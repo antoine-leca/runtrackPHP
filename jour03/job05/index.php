@@ -18,13 +18,15 @@
                 break;
             }
         }
-        if ($isvoyelle) {
-            $dic["voyelles"]++;
-        } else {
-            $dic["consonnes"]++;
-        }
+        if (($str[$val] >= "a" && $str[$val] <= "z") || ($str[$val] >= "A" && $str[$val] <= "Z"))
+            if ($isvoyelle) {
+                $dic["voyelles"]++;
+            } else {
+                $dic["consonnes"]++;
+            }
     }
 ?>
+
 <!DOCTYPE html>
     <html lang="en">
     <head>
