@@ -1,9 +1,10 @@
 <?php
-    $str = ["I", "'", "m ", " s", "o", "r", "r", "y ",  " D", "a", "v", "e ", " I", "'", "m ",  " a", "f", "r", "a", "i", "d ",  " I ", " c", "a", "n", "'", "t ",  " d", "o ",  " t", "h", "a", "t"];
-    $val = ["a", "e", "i", "o", "u", "y"];
-    foreach ($str as $key => $value):
-        if (in_array($value, $val)):
-            echo $value;
-        endif;
-    endforeach;
+    $str = "I'm sorry Dave I'm afraid I can't do that";
+    $voyelles = ["a", "e", "i", "o", "u", "y"];
+    for ($val = 0; $val < strlen($str); $val++) {
+        if (in_array($str[$val], $voyelles)) {
+            echo $str[$val];
+        $val++;
+        }
+    }
 ?>
