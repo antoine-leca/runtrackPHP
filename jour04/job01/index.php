@@ -1,5 +1,10 @@
 <?php
     $numberOfArguments = 0;
+    foreach ($_GET as $key => $value) {
+        $numberOfArguments++;
+    }
+    echo "Il y a $numberOfArguments arguments dans l'URL.<br>";
+    
     if (isset($_GET['name']) && isset($_GET['mail'])) {
         $name = $_GET['name'];
         $mail = $_GET['mail'];
