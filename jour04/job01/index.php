@@ -8,8 +8,8 @@
     if (isset($_GET['name']) && isset($_GET['mail'])) {
         $name = $_GET['name'];
         $mail = $_GET['mail'];
-        echo "Nom: $name <br> Mail: $mail";
     }
+    echo "<pre>";
     var_dump($_GET);
 ?>
 
