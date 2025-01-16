@@ -4,7 +4,7 @@
         $numberOfArguments++;
     }
     echo "Il y a $numberOfArguments arguments dans l'URL.<br>";
-    
+
     if (isset($_GET['name']) && isset($_GET['mail'])) {
         $name = $_GET['name'];
         $mail = $_GET['mail'];
@@ -22,10 +22,10 @@
 </head>
 <body>
     <form action="" method="GET">
-        <label for="name">Nom<br></label>
+        <label for="name">Nom : </label>
         <input type="text" name="name" id="name">
 
-        <label for="mail">Mail<br></label>
+        <label for="mail">Mail : </label>
         <input type="mail" name="mail" id="mail">
 
         <input type="submit" value="Envoyer">
