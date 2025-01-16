@@ -1,9 +1,11 @@
 <?php
-    if (isset($_POST['name']) && isset($_POST['mail'])) {
-        $name = $_POST['name'];
-        $mail = $_POST['mail'];
+    $numberOfArguments = 0;
+    if (isset($_GET['name']) && isset($_GET['mail'])) {
+        $name = $_GET['name'];
+        $mail = $_GET['mail'];
         echo "Nom: $name <br> Mail: $mail";
     }
+    var_dump($_GET);
 ?>
 
 <!DOCTYPE html>
@@ -14,11 +16,11 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="POST">
-        <label for="name">Nom</label>
+    <form action="" method="GET">
+        <label for="name">Nom<br></label>
         <input type="text" name="name" id="name">
 
-        <label for="mail">Mail</label>
+        <label for="mail">Mail<br></label>
         <input type="mail" name="mail" id="mail">
 
         <input type="submit" value="Envoyer">
