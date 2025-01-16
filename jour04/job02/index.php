@@ -3,6 +3,7 @@
         $name = $_GET['name'];
         $mail = $_GET['mail'];
     }
+    echo "<pre>";
     var_dump($_GET);
 ?>
 
