@@ -20,22 +20,16 @@
         <input type="text" name="username" id="name">
 
         <label for="mdp">Mot de passe : </label>
-        <input type="mdp" name="password" id="mail">
+        <input type="mdp" name="password" id="mdp">
 
         <input type="submit" value="Envoyer">
     </form>
-    <table border="1" cellspacing="0" cellpadding="10">
-        <thead>
-            <th>Argument</th>
-            <th>Valeur</th>
-        </thead>
-        <tbody>
-            <?php
-                foreach ($_POST as $key => $value) {
-                    echo "<tr><td>$key</td><td>$value</td></tr>";
-                }
-            ?>
-        </tbody>
-    </table>
+    <?php
+        if ($username == "John" && $password == "Rambo") {
+            echo "C'est pas ma guerre";
+        } else {
+            echo "Votre pire cauchemar";
+        }
+    ?>
 </body>
 </html>
