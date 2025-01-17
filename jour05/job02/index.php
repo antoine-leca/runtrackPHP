@@ -1,7 +1,7 @@
 <?php
     function bonjour($jour) {
         $jour = false;
-        if ($jour === true) {
+        if ($jour == true) {
             echo "Bonjour<br>";
         }
         else {
