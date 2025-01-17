@@ -1,18 +1,14 @@
 <?php
-    $slGD = "/";
-    $slDG = "\\";
-    $under = "_";
+    $largeur = 0;
+    $hauteur = 0;
+    $largeur_len = 0;
+    $hauteur_len = 0;
 
     if (isset($_GET["largeur"]) && isset($_GET["hauteur"])) {
-        $largeur = $_GET["largeur"];
-        $hauteur = $_GET["hauteur"];
+        
     }
     echo "<pre>";
     var_dump($_GET);
-
-    if (isset($slGD) && isset($slDG) && isset($under)) {
-        
-    }
 
 ?>
 
