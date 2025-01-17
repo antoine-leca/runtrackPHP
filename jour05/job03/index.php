@@ -1,7 +1,9 @@
 <?php
     function getHello() {
-        return "Hello LaPlateforme!";
+        $hlp = "Hello LaPlateforme!";
+        return $hlp;
     }
 
-    getHello()
+    getHello();
+    echo $hlp;
 ?>
