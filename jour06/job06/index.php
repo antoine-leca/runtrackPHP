@@ -13,8 +13,8 @@
     <label for="">Style Switch</label>
     <form action="" method="get">
         <select id="style" name="style">            
-            <option value="style0" <?php echo $style == 'style0' ? 'selected' : ''; ?>>Choisissez un style</option>
-            <option value="style1" <?php echo $style == 'style1' ? 'selected' : ''; ?>>Style 1</option>
+            <option value="style1" <?php echo $style == 'style1' ? 'selected' : ''; ?>>Choisissez un style</option>
+            <option value="style0" <?php echo $style == 'style0' ? 'selected' : ''; ?>>Style 1</option>
             <option value="style2" <?php echo $style == 'style2' ? 'selected' : ''; ?>>Style 2</option>
             <option value="style3" <?php echo $style == 'style3' ? 'selected' : ''; ?>>Style 3</option>
         </select>
