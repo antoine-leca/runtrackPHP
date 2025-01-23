@@ -2,7 +2,7 @@
 
 $pdo = new PDO("mysql:host=localhost; dbname=jour08; charset=utf8", "root", "");
 
-$reqEt = "SELECT sum(capacite) AS superficie_totale FROM salles";
+$reqEt = "SELECT sum(superficie) AS superficie_totale FROM etage";
 $etS = $pdo -> prepare($reqEt);
 $etS -> execute();
 $tabEt = $etS -> fetchAll();
