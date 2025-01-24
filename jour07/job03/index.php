@@ -1,6 +1,11 @@
 <?php
 session_start();
-    $_SESSION["name"] = $_POST["firstname"];
+    if (!isset($_SESSION['prenoms'])) {
+        $_SESSION['prenoms'] = array();
+    }
+    if (isset($_POST["send"]) && !empty($_POST["firstname"])) {
+        $_SESSION['prenoms'][] = $_POST["firstname"];
+    }
 ?>
 
 <!DOCTYPE html>
@@ -22,11 +27,9 @@ session_start();
         <br>
         <tbody>
             <?php
-                if (isset($_POST["send"])) {
-                    for ($i=0; $i < 10; $i++) {
-                        echo '<tr><td scope=row>' . $_POST["firstname"] . '</td></tr>';
-                    }
-                } 
+                foreach ($_SESSION['prenoms'] as $prenom) {
+                    echo '<tr><td scope=row>' . htmlspecialchars($prenom) . '</td></tr>';
+                }
             ?>
         </tbody>
     </table>
