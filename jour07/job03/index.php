@@ -6,6 +6,9 @@ session_start();
     if (isset($_POST["send"]) && !empty($_POST["firstname"])) {
         $_SESSION['prenoms'][] = $_POST["firstname"];
     }
+    if (isset($_POST["reset"])) {
+        $_SESSION['prenoms'] = array();
+    }
 ?>
 
 <!DOCTYPE html>
@@ -19,6 +22,7 @@ session_start();
     <form action="" method="post">
         <input type="text" name="firstname">
         <button type="submit" name="send">Envoi</button>
+        <button type="submit" name="reset">Reset</button>
     </form>
     <table border=1 cellspacing=0 cellpadding=10>
         <thead>
